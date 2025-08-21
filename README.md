@@ -1,31 +1,164 @@
-<!doctype html>
-
+<!doctype html> 
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Puja Valet & Security Services | Agra & Mathura</title>
-  <meta name="description" content="Puja Valet & Security Services — trusted valet & event security in Agra & Mathura. Services include valet parking, bouncers (male & female), guards, gunners, and drivers with walkie‑talkies and pocket cameras for transparency." />
+  <meta name="description" content="Puja Valet & Security Services — trusted valet & event security in Agra & Mathura. Services include valet parking, bouncers (male & female), guards, gunners, and drivers with walkie-talkies and pocket cameras for transparency." />
   <meta name="theme-color" content="#0F172A" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body{margin:0;font-family:Inter, sans-serif;background:#0b1220;color:#e2e8f0}
-    header,footer{background:#0f172a;padding:1rem;text-align:center}
-    nav a{color:#e2e8f0;margin:0 10px;text-decoration:none}
-    .hero{padding:3rem 1rem;text-align:center}
-    .hero h1{font-size:2rem;margin-bottom:1rem}
-    .hero p{max-width:700px;margin:auto;color:#94a3b8}
-    .btn{display:inline-block;padding:0.7rem 1rem;margin:0.3rem;background:#22d3ee;color:#05101a;border-radius:999px;font-weight:700;text-decoration:none}
-    .services,.about,.gallery,.contact{padding:3rem 1rem;max-width:1100px;margin:auto}
-    .services h2,.about h2,.gallery h2,.contact h2{text-align:center;margin-bottom:1rem}
-    .grid{display:grid;gap:1rem}
-    .grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-    .gallery img{width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.1)}
-    .contact form{display:grid;gap:1rem;max-width:500px;margin:auto}
-    input,textarea{padding:0.8rem;border-radius:8px;border:1px solid #334155;background:#0a1426;color:#e2e8f0}
-    .footer{font-size:0.9rem;color:#94a3b8}
+    /* Global */
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b1220;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    a {
+      transition: 0.3s ease;
+    }
+
+    /* Header */
+    header {
+      background: #0f172a;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #e2e8f0;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #22d3ee;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      margin: 0.5rem;
+      background: #22d3ee;
+      color: #05101a;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(34, 211, 238, 0.3);
+    }
+    .btn:hover {
+      background: #06b6d4;
+      transform: translateY(-2px);
+    }
+
+    /* Sections */
+    .services, .about, .gallery, .contact {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .services h2, .about h2, .gallery h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #22d3ee;
+    }
+
+    /* Services Grid */
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .services .grid div {
+      background: #111827;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .services .grid div:hover {
+      transform: translateY(-5px);
+      border-color: #22d3ee;
+    }
+
+    /* Gallery */
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, .1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    /* Contact */
+    .contact form {
+      display: grid;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      background: #0a1426;
+      color: #e2e8f0;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #22d3ee;
+      box-shadow: 0 0 0 3px rgba(34,211,238,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    footer a {
+      color: #22d3ee;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -42,38 +175,38 @@
 
   <section class="hero">
     <h1>Valet & Security Services in Agra & Mathura</h1>
-    <p>Providing valet parking, trained bouncers (male & female), guards, gunners, and drivers. Equipped with walkie‑talkies and pocket cameras for smooth coordination and transparency.</p>
-    <a class="btn" href="https://wa.me/919837088830" target="_blank">Chat on WhatsApp</a>
-    <a class="btn" href="tel:+917055623456">Call Now</a>
+    <p>Providing valet parking, trained bouncers (male & female), guards, gunners, and drivers. Equipped with walkie-talkies and pocket cameras for smooth coordination and transparency.</p>
+    <a class="btn" href="https://wa.me/919837088830" target="_blank">💬 Chat on WhatsApp</a>
+    <a class="btn" href="tel:+917055623456">📞 Call Now</a>
   </section>
 
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="grid grid-3">
       <div>
-        <h3>Valet Parking</h3>
+        <h3>🚗 Valet Parking</h3>
         <p>Trained drivers, token system, and secure handling of vehicles.</p>
       </div>
       <div>
-        <h3>Security Services</h3>
+        <h3>🛡️ Security Services</h3>
         <p>Male & female bouncers, guards, discipline & professional conduct.</p>
       </div>
       <div>
-        <h3>Gunners / Armed Escort</h3>
-        <p>Available for VIP and high‑security requirements.</p>
+        <h3>🔫 Gunners / Armed Escort</h3>
+        <p>Available for VIP and high-security requirements.</p>
       </div>
       <div>
-        <h3>Equipment</h3>
-        <p>Walkie‑talkies, pocket cameras, and supporting gear for transparency.</p>
+        <h3>📡 Equipment</h3>
+        <p>Walkie-talkies, pocket cameras, and supporting gear for transparency.</p>
       </div>
     </div>
   </section>
 
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>Puja Valet & Security Services was founded in 2021 with a simple mission – to make every event and business in Agra feel safe, secure, and well‑managed. What started as a small family‑run service has grown into a trusted name, providing valet parking, trained bouncers (male & female), guards, gunners, and drivers.</p>
-    <p>We believe security is not just about presence, but about professionalism, discipline, and trust. That’s why our staff wear smart uniforms, use walkie‑talkies for smooth coordination, and carry pocket cameras to ensure transparency and accountability.</p>
-    <p>Our values are simple: <b>Trust</b>, <b>Professionalism</b>, <b>Transparency</b>, and <b>Commitment</b>. Today, with repeat clients and strong word‑of‑mouth, we proudly serve weddings, corporate events, hotels, and private gatherings across Agra & Mathura.</p>
+    <p>Puja Valet & Security Services was founded in 2021 with a simple mission – to make every event and business in Agra feel safe, secure, and well-managed. What started as a small family-run service has grown into a trusted name, providing valet parking, trained bouncers (male & female), guards, gunners, and drivers.</p>
+    <p>We believe security is not just about presence, but about professionalism, discipline, and trust. That’s why our staff wear smart uniforms, use walkie-talkies for smooth coordination, and carry pocket cameras to ensure transparency and accountability.</p>
+    <p>Our values are simple: <b>Trust</b>, <b>Professionalism</b>, <b>Transparency</b>, and <b>Commitment</b>. Today, with repeat clients and strong word-of-mouth, we proudly serve weddings, corporate events, hotels, and private gatherings across Agra & Mathura.</p>
   </section>
 
   <section id="gallery" class="gallery">
@@ -97,21 +230,23 @@
       <input type="text" placeholder="Your Name" required>
       <input type="tel" placeholder="Phone Number" required>
       <textarea placeholder="Your Requirement" rows="4"></textarea>
-      <button class="btn" type="submit">Send Enquiry</button>
+      <button class="btn" type="submit">📩 Send Enquiry</button>
     </form>
     <p>Email: <a href="mailto:pujagroupservices@gmail.com">pujagroupservices@gmail.com</a></p>
     <p>Phone: 7055623456 / 6396840639</p>
     <p>Address: Balkeshwar Road, Agra</p>
-    <p><a class="btn" href="https://maps.app.goo.gl/yzHWbBohZaD4LTWy6?g_st=ipc" target="_blank">View on Google Maps</a></p>
+    <p><a class="btn" href="https://maps.app.goo.gl/yzHWbBohZaD4LTWy6?g_st=ipc" target="_blank">📍 View on Google Maps</a></p>
   </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Puja Valet & Security Services | <a href="https://www.instagram.com/pujasecurityvalet" target="_blank">Instagram</a> | <a href="https://www.facebook.com/profile.php?id=61579032548759" target="_blank">Facebook</a></p>
+  <footer>
+    <p>© <span id="year"></span> Puja Valet & Security Services | 
+      <a href="https://www.instagram.com/pujasecurityvalet" target="_blank">Instagram</a> | 
+      <a href="https://www.facebook.com/profile.php?id=61579032548759" target="_blank">Facebook</a>
+    </p>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
