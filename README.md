@@ -9,7 +9,7 @@
   <!-- Header -->
   <header>
     <h1 align="center"><div class="logo">Puja Valet & Security</div></h1>
-    <nav>
+    <nav align="center">
       <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
