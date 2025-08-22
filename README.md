@@ -2,7 +2,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <Title>Puja Valet & Security Services | Agra & Mathura</Title>
   <meta name="description" content="Trusted valet & security services in Agra & Mathura. Valet parking, bouncers, guards, gunners & drivers with walkie-talkies and pocket cameras." />
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
