@@ -8,7 +8,7 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">Puja Valet & Security</div>
+    <h1 align="center"><div class="logo">Puja Valet & Security</div></h1>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
